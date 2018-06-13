@@ -1,0 +1,11 @@
+directory    (txt): /dls/i24/data/2017/cm16788-1
+subdir      (txt): zlayer-test
+filename     (fid): zgrid44
+exp_time     (sec): 0.1
+step_size_x   (mm): 9
+step_size_y   (mm): 6
+num_of_x     (num): 7
+num_of_y     (num): 10
+energy        (eV): 12800.2
+det_dist      (mm): 700
+control_fid (.inp): control.inp

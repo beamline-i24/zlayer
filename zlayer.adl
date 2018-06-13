@@ -1,0 +1,595 @@
+
+file {
+	name="/dls_sw/i24/scripts/zlayer/zlayer.adl"
+	version=030107
+}
+display {
+	object {
+		x=4719
+		y=166
+		width=399
+		height=400
+	}
+	clr=3
+	bclr=50
+	cmap=""
+	gridSpacing=5
+	gridOn=0
+	snapToGrid=0
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		ffffff,
+		919191,
+		464646,
+		000000,
+		371a48,
+		c3a3e6,
+		d57cac,
+		ff3577,
+		fea597,
+		ad0747,
+		810253,
+		b0cc92,
+		eef207,
+		fff07f,
+		feae01,
+		f13f01,
+		d20607,
+		c6d8dc,
+		a9b2b7,
+		d5bda5,
+		577d58,
+		4f5a3a,
+		7f5e3d,
+		f16a56,
+		2c1b11,
+		1f1f41,
+		2c3e56,
+		61667c,
+		7099af,
+		5d3dc4,
+		0084c2,
+		0ec8bb,
+		009a66,
+		375659,
+	}
+}
+rectangle {
+	object {
+		x=3
+		y=1
+		width=81
+		height=398
+	}
+	"basic attribute" {
+		clr=13
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=8
+		width=222
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP1"
+		clr=56
+		bclr=54
+	}
+	format="string"
+	limits {
+	}
+}
+rectangle {
+	object {
+		x=317
+		y=1
+		width=81
+		height=398
+	}
+	"basic attribute" {
+		clr=13
+	}
+}
+text {
+	object {
+		x=348
+		y=14
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(txt)"
+}
+rectangle {
+	object {
+		x=87
+		y=1
+		width=228
+		height=398
+	}
+	"basic attribute" {
+		clr=13
+	}
+}
+text {
+	object {
+		x=6
+		y=13
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="directory"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=90
+		y=35
+		width=222
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP2"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=62
+		width=222
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP3"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=158
+		width=110
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP9"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=89
+		width=222
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP5"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=90
+		y=275
+		width=111
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP7"
+		clr=56
+		bclr=54
+	}
+	limits {
+		precSrc="default"
+		precDefault=2
+	}
+}
+"shell command" {
+	object {
+		x=320
+		y=372
+		width=74
+		height=24
+	}
+	command[0] {
+		label="run"
+		name="python zlayer_manager.py"
+		args="run"
+	}
+	clr=33
+	bclr=63
+	label="RUN"
+}
+text {
+	object {
+		x=348
+		y=68
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(fid)"
+}
+text {
+	object {
+		x=348
+		y=163
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(#)"
+}
+text {
+	object {
+		x=348
+		y=95
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(sec)"
+}
+text {
+	object {
+		x=348
+		y=255
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(KeV)"
+}
+text {
+	object {
+		x=348
+		y=283
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(mm)"
+}
+text {
+	object {
+		x=8
+		y=65
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="filename"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=8
+		y=95
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="exp_time"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=7
+		y=282
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="det_dist"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=7
+		y=253
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="energy"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=5
+		y=38
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="subdir"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=8
+		y=230
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=50
+	}
+	align="horiz. centered"
+}
+text {
+	object {
+		x=7
+		y=161
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="step_size_"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=348
+		y=40
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(txt)"
+}
+"text entry" {
+	object {
+		x=90
+		y=329
+		width=222
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP13"
+		clr=56
+		bclr=54
+	}
+	format="string"
+	limits {
+	}
+}
+text {
+	object {
+		x=9
+		y=333
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="control_fid"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=341
+		y=335
+		width=22
+		height=14
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="(.inp)"
+}
+"shell command" {
+	object {
+		x=6
+		y=373
+		width=74
+		height=24
+	}
+	command[0] {
+		label="initiate"
+		name="python zlayer_manager.py"
+		args="initiate"
+	}
+	clr=33
+	bclr=42
+	label="INITIATE"
+}
+"text update" {
+	object {
+		x=90
+		y=249
+		width=222
+		height=21
+	}
+	monitor {
+		chan="BL24I-OP-DCM-01:ENERGY.RBV"
+		clr=56
+		bclr=48
+	}
+	align="horiz. centered"
+	limits {
+		precSrc="default"
+		precDefault=4
+	}
+}
+"text update" {
+	object {
+		x=208
+		y=276
+		width=104
+		height=21
+	}
+	monitor {
+		chan="BL24I-EA-DET-01:Z.RBV"
+		clr=56
+		bclr=48
+	}
+	align="horiz. centered"
+	limits {
+		precSrc="default"
+		precDefault=2
+	}
+}
+text {
+	object {
+		x=109
+		y=138
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="x"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=216
+		y=139
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="y"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=203
+		y=158
+		width=110
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP10"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+text {
+	object {
+		x=7
+		y=187
+		width=69
+		height=16
+	}
+	"basic attribute" {
+		clr=54
+	}
+	textix="num_of_"
+	align="horiz. centered"
+}
+"text entry" {
+	object {
+		x=90
+		y=184
+		width=110
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP11"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
+"text entry" {
+	object {
+		x=203
+		y=184
+		width=110
+		height=23
+	}
+	control {
+		chan="BL24I-EA-IOC-12:GP12"
+		clr=56
+		bclr=54
+	}
+	limits {
+	}
+}
